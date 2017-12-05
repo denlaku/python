@@ -48,3 +48,9 @@ print "".join(arr)
 
 # 字符串格式化输出
 print '%s ddff' % '替代'
+
+print "======================part2=================="
+s = 'abcdefghijklmn'
+print s[1:5] # 截取字符串
+
+print s.split('f')
