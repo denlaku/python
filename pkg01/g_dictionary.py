@@ -41,3 +41,27 @@ print id(copyPerson['arr']), id(person['arr'])
 sen = '%(name)s 是一个很好的人, 年龄: %(age)s'
 tmpsen = sen % {"name": "Jeck", "age": 28}
 print tmpsen
+
+obj = {"name": "obj-name", "key": "k1", 'none': None, 'true': True}
+# get 获取指定key的值。如果key存在则返回key对应的value， 如果key不存在怎返回None;可以指定第二参数， 如果key不存在，则返回值为第二个参数
+print obj.get("name1", "true")
+# setdefault 设置键值对。若果指定的key存在，则返回key的value，如果key不存在，则在字典添加key，value为第二个参数，如果没有指定第二参数，则value为None
+print obj.setdefault('name')
+print obj
+print '===========================items=========================='
+stu = {"name": "my-name", "address": "my-address", "site": "my-site"}
+print stu.items() # 得到一个关于字典的列表，列表中的元素是字典的键值组成的元组
+print list(stu.iteritems())
+print stu.keys()
+print stu.values()
+# 删除字典中指定的key
+print stu.pop('name')
+print stu
+# 随机删除key
+print stu.popitem()
+print stu
+print '===========================update=========================='
+per = {"name": "my-name", "address": "my-address", "site": "my-site"}
+per.update({"name": "kk-val"})
+print per
+print per.has_key('name')
