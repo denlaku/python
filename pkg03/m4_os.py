@@ -4,7 +4,6 @@
 os
 '''
 import os
-import yaml
 
 # print dir(os)
 
@@ -16,7 +15,22 @@ import yaml
 # print os.listdir("pkg02")
 # os.makedirs("pkg02/001")
 # os.removedirs("pkg02/001")
-print os.stat("pkg02/b_sys.py")
+
+# 获取文件的状态
+# print os.stat("pkg02/b_sys.py")
+
+print os.getcwd()
+os.chdir(os.pardir)
+print os.getcwd()
+os.chdir("python-straining")
+print os.getcwd()
+
+alls = os.listdir(os.curdir)
+print alls
+for f in alls:
+    print os.stat(f)
 
 
-print "--------------------------------"
+
+if __name__ == "__main__":
+    print "--------------------"
