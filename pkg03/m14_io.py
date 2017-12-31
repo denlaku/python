@@ -1,7 +1,7 @@
 # coding=UTF-8
 # pylint: disable=invalid-name
 '''
-StringIO
+io
 '''
 import pickle
 import io
