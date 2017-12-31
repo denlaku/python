@@ -10,6 +10,6 @@
 # 浮点数与整数相除 -- 除数和被除数中只要有一个是浮点数，结果就是浮点数
 # 引用模块 from moduleName import *
 # 余数
-print 11 % 3
+print(11 % 3)
 # 四舍五入 round函数
-print round(10 / 3.0, 20)
+print(round(10 / 3.0, 20))

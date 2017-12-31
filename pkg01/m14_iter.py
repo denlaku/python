@@ -11,7 +11,7 @@ class MyRange(object):
         self.n = n
     def __iter__(self):
         return self
-    def next(self):
+    def __next__(self): # python3.0以后用__next__方法代替next方法
         '''method'''
         if self.i < self.n:
             i = self.i
@@ -22,11 +22,14 @@ class MyRange(object):
 
 rg = MyRange(10)
 
-print rg.next()
-print rg.next()
-print rg.next()
-print rg.next()
-print rg.next()
-print rg.next()
+# print(rg.__next__())
+# print(rg.__next__())
+# print(rg.__next__())
+# print(rg.__next__())
+# print(rg.__next__())
+# print(rg.__next__())
 
-print "-----------------end----------------"
+for i in rg:
+    print(i)
+
+print("-----------------end----------------")

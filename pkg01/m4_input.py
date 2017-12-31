@@ -2,5 +2,5 @@
 '''
 input
 '''
-name = raw_input("请输入： ")
-print name
+name = input("请输入： ")
+print(name)

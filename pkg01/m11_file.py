@@ -21,23 +21,23 @@ import fileinput
 
 # read 如果指定了参数size，则读取size个字符；如果没有指定参数size，则读取所有内容。
 with open('pkg01/k_01.txt') as f01:
-    print f01.read(7)
+    print(f01.read(7))
 
 # readline 如果没有指定参数size，则默认读取一行。如果指定了参数size，则读取一行中size个字符
 with open('pkg01/k_01.txt') as f01:
-    print f01.readline(21)
-    print "seek: ", f01.tell()
+    print(f01.readline(21))
+    print("seek: ", f01.tell())
 
 # readlines 读取所有的行，并以list的形式返回
 with open('pkg01/k_01.txt') as f01:
-    print f01.readlines()
+    print(f01.readlines())
 
 # 报错
 # with fileinput.input('pkg01/k_01.txt') as f01:
 #     print f01.readlines()
 
 for line in fileinput.input('pkg01/k_01.txt'):
-    print line
+    print(line)
 
 
 # f01 = open('pkg01/k_01.txt')
@@ -73,4 +73,4 @@ for line in fileinput.input('pkg01/k_01.txt'):
 #     f07.writelines("this is first line")
 
 
-print '----------------end-------------'
+print('----------------end-------------')

@@ -19,18 +19,18 @@ import os
 # 获取文件的状态
 # print os.stat("pkg02/b_sys.py")
 
-print os.getcwd()
+print(os.getcwd())
 os.chdir(os.pardir)
-print os.getcwd()
+print(os.getcwd())
 os.chdir("python-straining")
-print os.getcwd()
+print(os.getcwd())
 
 alls = os.listdir(os.curdir)
-print alls
+print(alls)
 for f in alls:
-    print os.stat(f)
+    print(os.stat(f))
 
 
 
 if __name__ == "__main__":
-    print "--------------------"
+    print("--------------------")

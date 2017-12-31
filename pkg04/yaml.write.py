@@ -19,6 +19,6 @@ p3 = Person("name3", 22)
 
 persons = [p1, p2, p3]
 
-print yaml.dump(persons)
+print(yaml.dump(persons))
 
-print "------------------------"
+print("------------------------")

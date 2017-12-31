@@ -5,9 +5,9 @@ yaml
 '''
 import yaml
 
-f = open('pkg03/test.yaml')
+f = open('pkg04/test.yaml')
 x = yaml.load(f)
 
-print x
+print(x)
 
-print "------------------------"
+print("------------------------")

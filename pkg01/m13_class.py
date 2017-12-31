@@ -4,26 +4,27 @@
 class
 '''
 class AA:
+    inner = "IIIIII"
     pass
 
 aa = AA()
 aa.id = 100
-print aa
-print type(AA)
-print type(aa)
-print aa.__class__
-print aa.id
+print(type(AA))
+print(type(aa))
+print(aa.__class__)
+print(aa.id)
+print(aa.inner)
 
-
+print("===============BB=================")
 class BB(object):
     pass
 bb = BB()
 bb.id = 100
-print bb
-print type(BB)
-print type(bb)
-print bb.__class__
-print bb.id
+print(bb)
+print(type(BB))
+print(type(bb))
+print(bb.__class__)
+print(bb.id)
 
 __metaclass__ = type
 class Person:
@@ -35,13 +36,13 @@ class Person:
     def setName(self, name):
         self.name = name
 
-print "Person.X", Person.X
+print("Person.X", Person.X)
 p1 = Person("first")
-print p1
-print p1.getName()
+print(p1)
+print(p1.getName())
 p1.setName("change: tom")
-print p1.getName()
-print Person.__class__
+print(p1.getName())
+print(Person.__class__)
 
 
 class Girl(Person):
@@ -56,11 +57,11 @@ class Girl(Person):
 
 class classA(object):
     def getName(self):
-        print "classA.getName"
+        print("classA.getName")
 
 class classB(object):
     def getName(self):
-        print "classB.getName"
+        print("classB.getName")
 
 class classC(classA, classB):
     pass
@@ -70,10 +71,6 @@ c1.getName()
 
 
 g1 = Girl("GGG", "red")
-print g1.getName()
+print(g1.getName())
 
-
-
-
-
-print '-------------------------------end-------------------------------'
+print('-------------------------------end-------------------------------')
